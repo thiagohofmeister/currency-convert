@@ -3,7 +3,7 @@ import { QueueFactory } from "../Factories/QueueFactory,";
 import { RepositoryFactory } from "../Factories/RepositoryFactory";
 import { CurrencyCreateOrUpdate } from "../UseCases/CurrencyCreateOrUpdate";
 import { CurrencyGetOneByCode } from "../UseCases/CurrencyGetOneByCode";
-import { CurrencyUpdateAmount } from "../UseCases/CurrencyUpdateAmount";
+import { CurrencyUpdateRate } from "../UseCases/CurrencyUpdateRate";
 
 export class CurrencyFacade {
   constructor(
@@ -38,7 +38,7 @@ export class CurrencyFacade {
   }
 
   public async updateAmount(code: string) {
-    const currencyUpdateAmount = new CurrencyUpdateAmount(
+    const currencyUpdateAmount = new CurrencyUpdateRate(
       this.repositoryFactory.buildCurrencyRepository(),
       this.providerFactory.buildCurrencyProvider()
     );
