@@ -40,7 +40,7 @@ export class CurrencyFacade {
   public async updateAmount(code: string) {
     const currencyUpdateAmount = new CurrencyUpdateAmount(
       this.repositoryFactory.buildCurrencyRepository(),
-      this.providerFactory.buildEconomiaProvider()
+      this.providerFactory.buildCurrencyProvider()
     );
 
     return currencyUpdateAmount.execute(code);

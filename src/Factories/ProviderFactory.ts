@@ -1,8 +1,8 @@
 import { AxiosRequest } from "../Modules/Request/AxiosRequest";
-import { EconomiaProvider } from "../Providers/EconomiaProvider";
+import { CurrencyProvider } from "../Providers/CurrencyProvider";
 
 export class ProviderFactory {
-  public buildEconomiaProvider() {
-    return new EconomiaProvider(new AxiosRequest(process.env.CURRENCY_API_URL));
+  public buildCurrencyProvider() {
+    return new CurrencyProvider(new AxiosRequest(process.env.CURRENCY_API_URL));
   }
 }
