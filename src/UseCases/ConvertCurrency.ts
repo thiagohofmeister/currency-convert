@@ -26,11 +26,11 @@ export class ConvertCurrency {
       throw new InvalidDataException("Invalid data.", errorReasons);
     }
 
-    const newAmount =
+    const result =
       data.amount * (toCurrency.getRate() / fromCurrency.getRate());
 
     return {
-      newAmount,
+      result,
     };
   }
 
