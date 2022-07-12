@@ -1,8 +1,8 @@
 {
-  "name": "convert-currency",
+  "name": "currency-convert",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:thiagohofmeister/convert-currency.git",
+  "repository": "git@github.com:thiagohofmeister/currency-convert.git",
   "author": "Thiago Hofmeister <thiago.hofmeister@gmail.com>",
   "license": "MIT",
   "scripts": {
